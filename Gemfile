@@ -3,4 +3,9 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in odr.gemspec
 gemspec
 
-gem "codeclimate-test-reporter", group: :test, require: nil
+group :test do
+
+  gem 'byebug'
+  gem 'codeclimate-test-reporter', require: nil
+
+end
