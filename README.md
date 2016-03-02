@@ -1,5 +1,11 @@
 # odr
 
+[![Build Status](https://travis-ci.org/nicb/odr.svg?branch=master)](https://travis-ci.org/nicb/odr)
+[![Code Climate](https://codeclimate.com/github/nicb/odr/badges/gpa.svg)](https://codeclimate.com/github/nicb/odr)
+[![Inline docs](http://inch-ci.org/github/nicb/odr.svg?branch=master)](http://inch-ci.org/github/nicb/odr)
+[![Test Coverage](https://codeclimate.com/github/nicb/odr/badges/coverage.svg)](https://codeclimate.com/github/nicb/odr/coverage)
+[![Issue Count](https://codeclimate.com/github/nicb/odr/badges/issue_count.svg)](https://codeclimate.com/github/nicb/odr)
+
 odr is a very simple JSON OpenData CLI reader
 
 ## Usage
