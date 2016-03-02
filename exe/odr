@@ -1,3 +1,8 @@
 #!/usr/bin/env ruby
 
+$: << File.expand_path(File.join(['..'] * 2, 'lib'), __FILE__)
 require "odr"
+
+retvalue = Odr::CLI.execute(STDOUT, ARGV)
+
+exit(retvalue)

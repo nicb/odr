@@ -26,12 +26,12 @@ module Odr
           opts.on('-', '--key KEY', String,
                   "add this key to the column listing") { |arg| options[:keys] << arg }
           opts.on("-h", "--help",
-                  "Show this help message.") { stdout.puts opts; exit }
+                  "Show this help message.") { stdout.puts opts; return -1 }
           opts.parse!(arguments)
   
-          if mandatory_options && mandatory_options.find { |option| options[option.to_sym].nil? }
-            stdout.puts opts; exit
-          end
+#         if mandatory_options && mandatory_options.find { |option| options[option.to_sym].nil? }
+#           stdout.puts opts; return -1
+#         end
         end
   
   			arguments.each { |uri| options[:uri] << uri }

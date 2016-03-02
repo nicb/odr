@@ -6,6 +6,6 @@ end
 
 %w(
   reader
-  execute
+  main
   cli
 ).each { |f| require File.join(Odr::PATH, f) }

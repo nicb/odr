@@ -20,13 +20,13 @@ module Odr
 
         uris.each do
           |uri|
-          data = MultiJson.load(read(uri))
+          data = MultiJson.load(read(uri), symbolize_keys: true)
           if args[:list_keys]
             print_keys(stdout, data)
           end
         end
 
-        exit(0)
+        return 0
       end
 
     private
